@@ -14,10 +14,6 @@ export default function Posts() {
                     <h2>Post Desc</h2>
                     <button>Edit</button>
                     <button>Delete</button>
-                    <button>Update</button>
-                    <button>test01</button>
-                    
-                    <button>test02</button>
                 </div>
            </div>
         </div>
