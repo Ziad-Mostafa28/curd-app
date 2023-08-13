@@ -5,6 +5,7 @@
 }
 body {
   background-color: #f6f6f6;
+  text-align: center;
 }
 
 body,h1,h2,button {
@@ -34,8 +35,7 @@ button {
   background-color: #fff;
   border: 1px solid #666;
   padding: 10px;
-  margin: auto;
-  margin-top: 3rem;
+  margin: 3rem auto;
 
 }
 
