@@ -1,11 +1,12 @@
 import React from "react";
 
-const CourseForm = () => {
+const CourseForm = (props) => {
     return(
-        <div>
-            Form
-        </div>
+        <form onSubmit={props.addCourse}>
+            <input type="text" value={props.current} onChange = {props.updateCourse} />
+            <button type="Submit">Submit</button>
+        </form>
     )
 }
 
-export default CourseForm
+export default CourseForm 
