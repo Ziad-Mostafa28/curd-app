@@ -24,14 +24,35 @@ class App extends Component {
     let courses = this.state.courses;
     courses.push({name: current})
     this.setState({
+      courses,
+      current:''
+    })
+  }
+  // Delete Course 
+
+  deleteCourse = (index) => {
+    let courses = this.state.courses;
+    courses.splice(index , 1)
+    this.setState({
       courses
     })
   }
-  
+
+  // EditCourse
+
+  editCourse =(index,value) => {
+    let courses = this.state.courses;
+    let course = courses[index];
+    course['name'] = value;
+    this.setState({
+      courses
+    })
+  }
+
   render (){
     const {courses} = this.state;
     const courseList = courses.map((course,index) => {
-      return <CourseList details={course} key={index}/>
+      return <CourseList details={course} key={index} index={index} deleteCourse={this.deleteCourse} editCourse={this.editCourse}/>
     })
   return (
     <section className="App">
