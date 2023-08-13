@@ -15,6 +15,7 @@ export default function Posts() {
                     <button>Edit</button>
                     <button>Delete</button>
                     <button>Update</button>
+                    <button>test01</button>
                 </div>
            </div>
         </div>
