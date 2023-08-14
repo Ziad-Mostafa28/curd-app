@@ -22,11 +22,13 @@ class App extends Component {
     e.preventDefault();
     let current = this.state.current;
     let courses = this.state.courses;
+    if (current) {
     courses.push({name: current})
     this.setState({
       courses,
       current:''
     })
+  }
   }
   // Delete Course 
 
